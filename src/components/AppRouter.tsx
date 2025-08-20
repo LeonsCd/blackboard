@@ -6,6 +6,7 @@ import ChemicalFormulaTest from './ChemicalFormulaTest';
 import CurlyBraceDemo from './CurlyBraceDemo';
 import RoughJSDemo from './RoughJSDemo';
 import ChalkStaticDemo from './ChalkStaticDemo';
+import Book3DDemo from './Book3DDemo';
 import './AppRouter.css';
 
 const AppRouter: React.FC = () => {
@@ -21,8 +22,8 @@ const AppRouter: React.FC = () => {
               <Link to="/markdown" className="nav-link">Markdown编辑器</Link>
               <Link to="/chemical" className="nav-link">化学公式测试</Link>
               <Link to="/braces" className="nav-link">大括号演示</Link>
-              <Link to="/roughjs" className="nav-link">RoughJS演示</Link>
               <Link to="/chalk" className="nav-link">粉笔静态演示</Link>
+              <Link to="/book3d" className="nav-link">3D翻书效果</Link>
             </div>
           </div>
         </nav>
@@ -64,6 +65,11 @@ const AppRouter: React.FC = () => {
                     <p>不依赖鼠标绘制，直接在黑板上画出一条直线和一个圆圈</p>
                     <Link to="/chalk" className="feature-link">查看效果</Link>
                   </div>
+                  <div className="feature-card">
+                    <h3>3D翻书效果</h3>
+                    <p>使用纯CSS和React实现的3D翻书动画，支持多页内容</p>
+                    <Link to="/book3d" className="feature-link">开始体验</Link>
+                  </div>
                 </div>
               </div>
             } />
@@ -73,6 +79,7 @@ const AppRouter: React.FC = () => {
             <Route path="/braces" element={<CurlyBraceDemo />} />
             <Route path="/roughjs" element={<RoughJSDemo />} />
             <Route path="/chalk" element={<ChalkStaticDemo />} />
+            <Route path="/book3d" element={<Book3DDemo />} />
           </Routes>
         </main>
       </div>
