@@ -1,0 +1,56 @@
+.brace-demo-page {
+  color: white;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.control input[type="number"] {
+  width: 120px;
+  margin-left: 0.5rem;
+}
+
+.hint {
+  opacity: 0.8;
+}
+
+.brace-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: 60px 1fr 60px;
+  gap: 0.5rem;
+  align-items: stretch;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 12px;
+  padding: 12px 0;
+}
+
+.brace-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.brace-svg svg {
+  width: 28px;
+  height: 100%;
+}
+
+.brace-content {
+  overflow: auto;
+  padding: 0 8px;
+}
+
+.content-block {
+  min-height: 120px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+
