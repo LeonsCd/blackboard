@@ -1,4 +1,5 @@
 # Markdown + 化学公式渲染器
+<img width="1468" height="860" alt="image" src="https://github.com/user-attachments/assets/38bce6a4-b2ec-4328-a2e1-ab43afcd3e5e" />
 
 一个基于React 18 + Vite的Markdown编辑器，支持化学公式的自动识别和渲染。
 
