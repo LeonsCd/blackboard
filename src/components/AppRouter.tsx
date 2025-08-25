@@ -7,7 +7,10 @@ import CurlyBraceDemo from './CurlyBraceDemo';
 import RoughJSDemo from './RoughJSDemo';
 import ChalkStaticDemo from './ChalkStaticDemo';
 import Book3DDemo from './Book3DDemo';
+import MathBlackboard from './MathBlackboard';
+import MathJaxPage from './MathJaxPage';
 import './AppRouter.css';
+import ZustandDemo from './ZustandDemo';
 
 const AppRouter: React.FC = () => {
   return (
@@ -19,11 +22,12 @@ const AppRouter: React.FC = () => {
             <div className="nav-links">
               <Link to="/" className="nav-link">首页</Link>
               <Link to="/blackboard" className="nav-link">黑板板书</Link>
-              <Link to="/markdown" className="nav-link">Markdown编辑器</Link>
+              <Link to="/mathjax" className="nav-link">MathJax演示</Link>
               <Link to="/chemical" className="nav-link">化学公式测试</Link>
               <Link to="/braces" className="nav-link">大括号演示</Link>
               <Link to="/chalk" className="nav-link">粉笔静态演示</Link>
               <Link to="/book3d" className="nav-link">3D翻书效果</Link>
+              <Link to="/zustand" className="nav-link">Zustand演示</Link>
             </div>
           </div>
         </nav>
@@ -70,6 +74,16 @@ const AppRouter: React.FC = () => {
                     <p>使用纯CSS和React实现的3D翻书动画，支持多页内容</p>
                     <Link to="/book3d" className="feature-link">开始体验</Link>
                   </div>
+                  <div className="feature-card">
+                    <h3>数学板书</h3>
+                    <p>使用KaTeX渲染数学公式，支持各种数学符号和表达式</p>
+                    <Link to="/math" className="feature-link">开始使用</Link>
+                  </div>
+                  <div className="feature-card">
+                    <h3>MathJax演示</h3>
+                    <p>使用MathJax渲染数学公式，支持自定义标签和元素查找</p>
+                    <Link to="/mathjax" className="feature-link">开始使用</Link>
+                  </div>
                 </div>
               </div>
             } />
@@ -80,6 +94,9 @@ const AppRouter: React.FC = () => {
             <Route path="/roughjs" element={<RoughJSDemo />} />
             <Route path="/chalk" element={<ChalkStaticDemo />} />
             <Route path="/book3d" element={<Book3DDemo />} />
+            <Route path="/math" element={<MathBlackboard />} />
+            <Route path="/mathjax" element={<MathJaxPage />} />
+            <Route path="/zustand" element={<ZustandDemo />} />
           </Routes>
         </main>
       </div>
